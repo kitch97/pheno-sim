@@ -49,7 +49,7 @@ def eq6(u, p, lamed):
     prob = (u * (1 + p)) / lamed
     return prob
 
-# lambda is a reserved word; combines all populations + level of preference
+# lambda is a reserved word; combines all populations + level of benefit
 
 
 def lamed(u, p, v, t, z, w, K, Q, J, N):
@@ -171,9 +171,9 @@ while n <= gen:
 print w_list[5]
 print u_list[5]
 print v_list[5]
-aa = (w/2) + u + (v/2)
-Aa = (Q + J + v)
-AA = (K + v + Q)
+aa = (w/2) + u/2 + (v/2)
+Aa = (Q/2 + J/2 + w/2)
+AA = (K/2 + v/2 + Q/2)
 
 print "frequency of aa individuals: " + str(aa)
 print "frequency of Aa individuals: " + str(Aa)
